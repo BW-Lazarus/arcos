@@ -3,7 +3,7 @@
 import pandas as pd
 from pandasql import sqldf
 import duckdb
-from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+# from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 import functools
 
 import glob
