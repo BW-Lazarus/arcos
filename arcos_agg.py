@@ -1,3 +1,20 @@
+"""
+A Python script that reads the raw Automation of Reports and Consolidated Orders System (ARCOS) data and aggregates the fields 
+specified by the user. Please visit https://arcos.nd.edu/ to access this data's raw and processed versions.
+
+The current publicly available ARCOS data include all prescription opioid transaction records at the wholesale level 
+in the United States from 01/01/2006 to 12/31/2019. Each record contains detailed information on the buyer, seller, 
+and the medication being transacted.
+
+The raw ARCOS CSV file is about 344 GB (approximately 0.78 billion lines of text), making it challenging to process as a whole on most
+personal devices. In addition, irregularities are found in a (small) portion of the records, so they could not be properly read into 
+memory by specifying delimiter(s). This script processes the ARCOS data  in batches with explicit garbage collection, but the lexer 
+fails to parse only 15 records. Python 3.8 or above is required.
+
+The ARCOS Data Portal at the University of Notre Dame (link above) provides excellent ARCOS data request services. Nonetheless,
+this script could be helpful for researchers who wish to work with transaction-level data.
+"""
+
 import gc
 import pandas as pd
 import numpy as np
