@@ -8,8 +8,8 @@ and the medication being transacted.
 
 The raw ARCOS CSV file is about 344 GB (approximately 0.78 billion lines of text), making it challenging to process as a whole on most
 personal devices. In addition, irregularities are found in a (small) portion of the records, so they could not be properly read into 
-memory by specifying delimiter(s). This script processes the ARCOS data  in batches with explicit garbage collection, but the lexer 
-fails to parse only 15 records. Python 3.8 or above is required.
+memory by specifying delimiter(s). This script processes the ARCOS data in batches with explicit garbage collection and it fails to 
+parse only 15 records. Python 3.8 or above is required.
 
 The ARCOS Data Portal at the University of Notre Dame (link above) provides excellent ARCOS data request services. Nonetheless,
 this script could be helpful for researchers who wish to work with transaction-level data.
