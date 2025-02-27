@@ -190,7 +190,7 @@ if __name__ == '__main__':
         result = list()
         collection = WeakValueDictionary()
         line = f.readline()
-        while line:= f.readline():
+        while line := f.readline():
             record = gen_record(line)
             total += 1
 
